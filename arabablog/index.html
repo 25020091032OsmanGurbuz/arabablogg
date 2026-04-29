@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoVision | Premium Galeri & Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #0b0b0b; color: #ffffff; scroll-behavior: smooth; }
+        h1, h2, h3, .navbar-brand { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        
+        /* Navbar */
+        .navbar { background-color: rgba(0,0,0,0.95) !important; border-bottom: 1px solid #222; }
+        .navbar-brand { color: #e63946 !important; letter-spacing: 2px; font-size: 1.6rem; }
+        .nav-link { color: #eee !important; font-weight: bold; transition: 0.3s; }
+        .nav-link:hover { color: #e63946 !important; }
+
+        /* Hero */
+        .hero { 
+            height: 75vh; 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1500'); 
+            background-size: cover; background-position: center;
+            display: flex; align-items: center; justify-content: center; text-align: center;
+        }
+
+        /* Kartlar */
+        .card { background-color: #161616; border: 1px solid #222; color: white; border-radius: 0; transition: 0.4s; overflow: hidden; }
+        .card:hover { border-color: #e63946; transform: translateY(-10px); }
+        .card-img-top { height: 220px; object-fit: cover; border-radius: 0; }
+        
+        .section-title { border-left: 6px solid #e63946; padding-left: 15px; margin-bottom: 40px; }
+        .price { color: #e63946; font-weight: bold; font-size: 1.2rem; }
+        .btn-danger { background-color: #e63946; border: none; border-radius: 0; font-weight: bold; }
+        
+        /* Blog Bölümü */
+        .blog-post { background: #111; padding: 20px; border-radius: 5px; margin-bottom: 20px; border: 1px solid #222; }
+        .blog-date { color: #e63946; font-size: 0.8rem; font-weight: bold; }
+
+        footer { background: #050505; border-top: 1px solid #222; padding: 40px 0; color: #666; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">AUTOVISION</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#galeri">VİTRİN</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">BLOG</a></li>
+                <li class="nav-item"><a class="nav-link" href="#iletisim">İLETİŞİM</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="container">
+        <h1 class="display-1 fw-bold">SINIRLARI ZORLA</h1>
+        <p class="lead mb-4">En seçkin otomobil koleksiyonu ve teknik incelemeler.</p>
+        <a href="#galeri" class="btn btn-danger btn-lg px-5 py-3">KOLEKSİYONU GÖR</a>
+    </div>
+</header>
+
+<section id="galeri" class="container py-5">
+    <h2 class="section-title">GÜNCEL STOK</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600" class="card-img-top" alt="Bugatti Chiron">
+                <div class="card-body">
+                    <h5>Nighthawk S-GT</h5>
+                    <p class="price">4.250.000 TL</p>
+                    <p class="small text-muted">720 HP, V8 Çift Turbo. Karbon Fiber detaylar ve pist odaklı aerodinamik yapı.</p>
+                    <button class="btn btn-danger btn-sm w-100">İNCELE</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600" class="card-img-top" alt="BMW M4">
+                <div class="card-body">
+                    <h5>Urban Electric Z</h5>
+                    <p class="price">2.100.000 TL</p>
+                    <p class="small text-muted">Tam elektrikli, 550 km menzil. Şehir hayatı için sessiz, güçlü ve akıllı bir performans.</p>
+                    <button class="btn btn-danger btn-sm w-100">İNCELE</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600" class="card-img-top" alt="Muscle Car">
+                <div class="card-body">
+                    <h5>Vulcan Classic V8</h5>
+                    <p class="price">3.800.000 TL</p>
+                    <p class="small text-muted">Klasik tasarım, modern teknoloji. Safkan Amerikan gücünü ve ruhunu garajınızda hissedin.</p>
+                    <button class="btn btn-danger btn-sm w-100">İNCELE</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600" class="card-img-top" alt="Range Rover SUV">
+                <div class="card-body">
+                    <h5>Summit Explorer</h5>
+                    <p class="price">2.950.000 TL</p>
+                    <p class="small text-muted">Gelişmiş 4x4 sistemi ve havalı süspansiyon ile her arazi koşulunda üst düzey konfor.</p>
+                    <button class="btn btn-danger btn-sm w-100">İNCELE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="container py-5 border-top border-secondary">
+    <h2 class="section-title">OTOMOBİL BLOG</h2>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="blog-post">
+                <span class="blog-date">24 NİSAN 2026</span>
+                <h3 class="mt-2">Elektrikli Araçlarda Menzil Sorunu Bitiyor mu?</h3>
+                <p class="text-muted">Yeni nesil katı hal bataryaları sayesinde 1000 km üzeri menziller artık hayal değil. İşte son teknolojik gelişmeler...</p>
+                <a href="#" class="text-danger fw-bold text-decoration-none small">DEVAMINI OKU →</a>
+            </div>
+            <div class="blog-post">
+                <span class="blog-date">20 NİSAN 2026</span>
+                <h3 class="mt-2">Klasik Araba Restorasyonu Hakkında Bilmeniz Gerekenler</h3>
+                <p class="text-muted">Eski bir efsaneyi hayata döndürmek sabır ve doğru parçaları bulmayı gerektirir. İşte ilk adım rehberi...</p>
+                <a href="#" class="text-danger fw-bold text-decoration-none small">DEVAMINI OKU →</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="bg-danger p-4 text-white">
+                <h4>BÜLTENE KATIL</h4>
+                <p class="small">Yeni gelen araçlardan ve güncel blog yazılarından ilk siz haberdar olun.</p>
+                <input type="email" class="form-control mb-2" placeholder="E-posta Adresiniz">
+                <button class="btn btn-dark w-100 fw-bold">KAYDOL</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-1 fw-bold">AUTOVISION PREMIUM MOTORS</p>
+        <p class="small mb-0">© 2026 Tüm Hakları Saklıdır. | Designed for Speed</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
